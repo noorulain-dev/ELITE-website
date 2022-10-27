@@ -1,0 +1,1324 @@
+/*
+Filename: style.css
+Authors: Noor-Ul-Ain
+*/
+
+html{
+	scroll-behavior: smooth;
+}
+
+/*Installing font*/
+@font-face{
+	font-family: axilia;
+	src: url(../font/axilia.otf);
+}
+
+/*General styling for body*/
+body{
+	font: 20px "bahnschrift light", sans-serif;
+	background-color: #f2f2f2;
+	margin: 0; 
+}
+
+/*General styling for h1 and h2*/
+h1{
+	font: 60px axilia, sans-serif;
+	text-align: center;
+	letter-spacing: 6px;
+}
+
+h2{
+	font: 40px axilia, sans-serif;
+	letter-spacing: 6px;
+}
+
+/*Footer*/
+footer h3{
+	font: bold 0.9em Axilia,sans-serif;
+	letter-spacing: 3px;
+}
+
+div.footer_menu ul{
+	display: inline-block;
+	list-style-type: none;
+	margin-left: 3%;
+	padding-right: 5%;
+}
+
+div.footer_menu ul li{
+	margin-top:5%;
+	font-size: 0.8em;
+}
+
+div.footer_menu{
+	width: 40%;
+	float: left;
+	border-right: 5px solid white;
+	margin-bottom: 3%;
+}
+
+div.footer_socials{
+	display: inline-block;
+	width: 20%;
+	text-align: center;
+	float: left;
+}
+
+div.footer_credits{
+	display: inline-block;
+	text-align: center;
+	width: 39%;
+	border-left: 5px solid white;
+}
+
+p.footer_bottom{
+	margin-bottom: 50px;
+}
+
+/*Styling paragraph element in footer*/
+footer p{
+	text-align: center;
+	clear: both;
+}
+
+footer li{
+	color: black;
+	text-decoration: none;
+	transition: 0.35s;
+}
+
+.flinks{
+	transition: 0.35s;
+	text-decoration: none;
+	color: black;
+}
+
+.flinks:hover{
+	border-bottom: 1px ridge #ffcccc;
+}
+
+.flinks:active{
+	font-weight: bold;
+}
+
+/*CSS for banner*/
+/*img element containing banner image*/
+.banner_img{
+	width: 100%;
+}
+
+/*Figure element containing banner image*/
+.page_banner{
+	margin: 0; 
+	border-bottom: 5px solid #333;
+
+}
+
+/*Styling the text positioned over banner image*/
+#banner_text{
+	font-family: axilia, sans-serif;
+	letter-spacing: 15px;
+	font-size: 6vw;
+	position: absolute;
+	width: 100%;
+	background-color: #f2f2f2;
+	opacity: 0.8;
+	letter-spacing: 15px;
+	transform: translate(0, -475%);
+	user-select: none; 
+}
+
+/*Div containing banner image and banner title*/
+.b_container{
+	position: relative;
+	text-align: center;
+}
+/*End of banner*/
+
+.message_d{
+	font-size: 3vw;
+	font-weight: bold;
+	letter-spacing: 7px;
+	text-align: center;
+	width: 100%;
+	opacity: 0.8;
+	padding: 10% 0%;
+}
+
+
+/*Index Page*/
+/*Banner for index page (unique banner compared to other pages)*/
+
+.banner_div{
+	background-image: url("../images/banner.jpeg");
+	padding: 15% 0;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+#page_title{
+	font-size: 7vw;
+	font-weight: bold;
+	letter-spacing: 40px;
+	text-align: center;
+	width: 100%;
+	background-color: white;
+	opacity: 0.8;
+}
+
+.center{
+	text-align: center;
+}	
+
+div.center{
+	padding: 5% 15%;
+}
+
+div.center p{
+	font-size: 25px;
+}
+
+
+/*Styling h2 elements only in index page*/
+.index_h2{
+	border-bottom: 5px solid #333;
+	padding: 3%;
+ }
+ 
+ 
+/*To style the image links in home page*/
+.img_link{
+	width: 100%;
+	height: 15%;
+	transition: 0.3s ease-out;
+	display: block;
+	backface-visibility: hidden;
+}
+
+/*Divs containing bedroom page link and dining room page link*/
+#bedroom, #d_room{
+	position: relative;
+	display: inline-block;	
+	width: 50%;
+	float: left;
+}
+
+
+/*Styling divs containing living room page link and office page link*/
+#l_room, #office{
+	position: relative;
+	display: inline-block;	
+	width: 50%;
+	float: right;
+}
+
+/*Styling the div containing text that appears in the middle of the image*/
+.middle{
+	transition: 0.5s ease;
+	opacity: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /*Move 50% to the left and 50% up*/
+	text-align: center;
+}
+
+#bedroom:hover .middle, #l_room:hover .middle, #d_room:hover .middle, #office:hover .middle{
+	opacity: 1;
+}
+
+.room_text{
+	background-color: #f2f2f2;
+	font: bold 30px axilia, sans-serif;
+	letter-spacing: 5px;
+	color: black;
+	transition: 0.3s ease-out;
+}
+
+/*article element containing links to rooms*/
+#rooms{
+	overflow: auto;
+	margin: 0 10%;
+}
+
+/*Styling the paragraph elements in the article with id rooms*/
+#rooms div>p{
+	background-color: #f2f2f2;
+	opacity: 0.8;
+	position: absolute;
+	letter-spacing: 5px;
+	font: 2vw axilia, sans-serif;
+}
+
+.img_link:hover{
+	box-shadow: 0px 0px 0px 5px #ffcccc;
+	transform: scale(0.9);
+	opacity: 0.5;
+}
+
+.img_link:active{
+	opacity: 0.8;
+}
+
+
+/*Styling the Google Maps*/
+iframe{
+	width: 100%;
+}
+
+/*Authors section in index page*/
+#authors{
+	width: 80%;
+	margin: auto;
+	padding-bottom: 10%;
+	overflow: auto;
+	border-bottom: 5px solid white;
+}
+
+
+/*Styling divs with image links to individual about pages*/
+.members{
+	display: inline-block;
+	width: 20%;
+	margin-left: 3%;
+	position: relative;
+}
+
+/*Styling images in divs containing image links to individual about pages*/
+.members img{
+	width: 100%;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: 0.5s ease;
+	backface-visibility: hidden;
+}
+
+.members:hover .middle{
+	opacity: 1;
+}
+
+.member_name{
+	background-color: #f2f2f2;
+	font: bold 3vh axilia, sans-serif;
+	letter-spacing: 5px;
+	color: black;
+}
+
+
+/*Aside element in index page*/
+#a_index{	
+	width: 30%;
+	line-height: 120%;
+	text-align: center;
+	margin: 10% 25%;
+	padding: 0 10%;
+	border-left: 5px ridge #ffcccc;
+}
+
+#a_index h3{
+	font: bold 20px axilia, sans-serif;
+	letter-spacing: 5px;
+}
+
+#a_index ul{
+	width: 40%;
+	margin: auto;
+}
+
+/*Styling social media icons*/
+.socials{
+	transition: 0.3s ease-out;
+}
+
+.socials:hover{
+	transform: scale(1.2);
+}
+
+.socials:active{
+	opacity: 0.6;
+}
+
+/*Styling the aside element*/
+#a_index ul li{
+	list-style-type: none;
+	text-align: center;
+	padding: 5%;
+}
+
+#a_index ul li:hover{
+	background-color: #808080;	
+}
+
+/*Styling external links*/
+.ext_link{
+	text-decoration: none;
+	transition: 0.2s ease-out;
+}
+
+.ext_link:link{
+	color: black;
+}
+
+.ext_link:visited{
+	color: black;
+}
+
+.ext_link:hover{
+	color: #f2f2f2;
+	background-color: #808080;
+}
+
+.ext_link:active{
+	color: #d9d9d9;
+}
+
+/*Product Pages */
+.bttn{   /*CSS to make links look like buttons*/
+	background-color: #808080;
+	padding: 10px 35px;
+	transition: 0.3s;
+	border-bottom: 2px solid #cccccc;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+}
+
+.bttn:hover{ /* Used for section anchors in product page */
+	background-color: #f2f2f2;
+	color: black;
+}
+
+.bttn:active{
+	background-color: #d9d9d9;
+	color: white;
+}
+
+
+
+.title_desc{
+	text-align: center;
+}
+
+/*Section anchors in enhancements page also given the same class name 
+to reuse styling*/
+.set_select{ /* Style list used for section achors */
+	text-align: center;
+	list-style-type: none;
+}
+
+.set_select li{
+	display: inline;
+	padding: 0.5% 1.5%;
+}
+
+.set_heading{ /* Heading for sets of furniture */
+	text-align: center;
+	background-color: #e6e6e6;
+	border-bottom: 5px ridge #ffcccc;
+	border-top: 5px ridge #ffcccc;
+	padding: 10px 0 10px 0;
+}
+
+/* CSS for elements in products page floating left */
+.left{ /* Container for sets with images floating left */
+	overflow: hidden;
+	margin-bottom: 5%;
+}
+
+.left figure img{
+	width: 100%;
+	border: 5px ridge #ffcccc;
+	padding: 10px;
+}
+
+.left figure{
+	float: left;
+	width: 35%;
+}
+
+.Prod_List_Left{
+	float: left;
+	width: 350px;
+	padding: 1.5%;
+	text-align: center;
+	margin: 1.5%;
+	border-bottom : 5px ridge #ffcccc;
+	border-top : 5px ridge #ffcccc;
+	background-color: #e6e6e6;
+}
+
+.Prod_List_Left li{
+	text-align: left;
+	padding-bottom: 3%;
+}
+
+.list_title{
+	display: block;
+	padding-bottom: 4%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.Prod_Table_Left{
+	float: left;
+	padding: 1.5%;
+	margin: 1.5%;
+	border-collapse: collapse;
+}
+
+.Prod_Table_Left caption{
+	padding-bottom: 4%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.Prod_Table_Left th,td{
+	border: 1px solid black;
+	padding: 1.5%;
+}
+
+.Prod_Table_Left th{
+	background-color: #e6e6e6;
+}
+
+.Prod_Desc_Left{
+	border-bottom: 5px ridge #ffcccc;
+	float:left;
+	margin: 1% 1.5%;
+	padding: 1.5%;
+	width: 52.5%;
+	background-color: #e6e6e6;
+}
+
+
+/* For sections floating right */
+.right{
+	overflow: hidden;
+	margin-bottom: 5%;
+}
+
+.right figure img{
+	width: 100%;
+	border: 5px ridge #ffcccc;
+	padding: 10px;
+}
+
+.right figure{
+	float: right;
+	width: 35%;
+}
+
+.Prod_List_Right{
+	float: right;
+	width: 350px;
+	padding: 1.5%;
+	text-align: center;
+	margin: 1.5%;
+	border-bottom : 5px ridge #ffcccc;
+	border-top : 5px ridge #ffcccc;
+	background-color: #e6e6e6;
+}
+
+.Prod_List_Right li{
+	text-align: left;
+	padding-bottom: 3%;
+}
+
+.list_title{
+	display: block;
+	padding-bottom: 4%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.Prod_Table_Right{
+	float: right;
+	padding: 1.5%;
+	margin: 1.5%;
+	border-collapse: collapse;
+}
+
+.Prod_Table_Right caption{
+	padding-bottom: 4%;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.Prod_Table_Right th,td{
+	border: 1px solid black;
+	padding: 1.5%;
+}
+
+.Prod_Table_Right th{
+	background-color: #e6e6e6;
+}
+
+.Prod_Desc_Right{
+	border-bottom: 5px ridge #ffcccc;
+	float: right;
+	margin: 1.5% 1%;
+	padding: 1.5%;
+	width: 52.5%;
+	background-color: #e6e6e6;
+}
+
+.Top_bttn{ /* Back to top button in products page */
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	width: 300px;
+	margin-bottom: 15px;
+}
+
+
+
+/*About Page*/
+#aboutheader{
+	font-family: axilia, sans-serif;
+	border-bottom: 2px solid black;
+	background-color: #ffffff;
+	position: fixed;
+	width: 100%;
+	top: 0;
+	z-index: 5;
+}
+
+.logo{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.about_h1{
+	text-align: center;
+	font-family: "bahnschrift light", sans-serif;
+	margin-top: 10%;
+}
+
+.aboutus:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+
+.photo, .description, .contribution{
+	float: left;
+	width: 40%;
+	padding: 15px;
+	margin-left: 5%;
+
+}
+
+.photo{
+	margin-top: 35px;
+	text-align: center;
+}
+
+.photo img{
+	width: 100%;
+	max-width: 600px;
+	height: auto;
+	border: groove;
+	padding: 20px;
+}
+
+.description{
+	font-family: "bahnschrift light", sans-serif;
+	text-align: center;
+
+}
+
+.description h2{
+	font-size: 200%;
+}
+
+.description h3,h4{
+	font-family: "Arial", sans-serif;
+}
+
+.description p{
+	text-align: justify;
+}
+
+/* contribution table */
+.contribution table{
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.contribution th{
+	background-color: #2d2c2c;
+	color: #ffffff;
+}
+
+.contribution tr:nth-child(even){
+	background-color: #f2f2f2
+}
+
+.contribution th, td{
+	border-bottom: 2px solid black;
+	padding: 20px;
+	font-family: "bahnschrift light", sans-serif;
+	font-size: 20px;
+}
+
+
+/*Navigation menu*/
+/* menubar */
+nav{
+	margin: 0 auto;
+    background-color: #ffffff;
+    text-align: center;
+    width: 100%;
+}
+
+nav ul{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav ul li{
+	display: inline-block;
+	background-color: #ffffff;
+	padding: 0;
+}
+
+nav a{
+	text-decoration: none;
+	display: block;
+	color: #000000;
+	font-size: 20px;
+	line-height: 60px;
+	padding: 0 20px;
+	transition: 0.2s ease-out;
+}
+
+nav li a:hover, .dropdownbutton:hover{
+	color: black;
+	font-weight: bold;
+}
+
+.dropdownlist{
+	display: none;
+	position: absolute;
+	top: 60px;
+}
+
+.dropdownlist li{
+	list-style-type: none;
+	display: inherit;
+	float: none;
+	position: relative;
+	background-color: #000000;
+}
+
+.dropdownlist li a{
+	color: #ffffff;
+	font-size: 18px;
+	padding: 0 32px;
+	width: auto;
+}
+
+.dropdownlist li a:hover{
+	position: relative;
+	background-color: #d8d1cf;
+	color: black;
+}
+
+ul.menubar li:hover .dropdownlist{
+	display: block;
+}
+
+/* hamburger list */
+.hamburger{
+	display: none;
+	font-size: 25px;
+	line-height: 70px;
+	width: 25px;
+}
+
+#toggle{
+	display: none;
+}
+
+/*Disclaimer page*/
+.page_h1{
+	text-align: center;
+	margin-top: 5%;
+}
+
+#dis_content{
+	margin: 5% 10%;
+	padding: 2%;
+	line-height: 200%;
+	text-align: justify;
+	border-left: 5px ridge #ffcccc;
+}
+
+/*Enquiry Page*/
+
+input[type=text], input[type=email]{
+	margin: 1% 0;
+	padding: 0.5% 0;
+	width: 40%;
+	font-size: 15px;
+	font-family: "bahnschrift light", sans-serif;
+}
+
+/*range slider customisations*/
+/* the following customisations have been inspired from: https://brennaobrien.com/blog/2014/05/style-input-type-range-in-every-browser.html*/
+input[type=range] {
+	width: 50%;
+	margin: 8.6px 0;
+	background-color: #ffcccc;
+	-webkit-appearance: none;
+	border-radius: 10px;
+}
+
+
+input[type=range]::-moz-range-track{
+	background: #ffffff;
+	border: 0.5px solid #000101;
+	border-radius: 4px;
+	width: 100%;
+	height: 5.8px;
+	cursor: pointer;
+}
+
+input[type=range]::-webkit-slider-thumb{
+	width: 20px;
+	height: 23px;
+	background: #ffa395;
+	border: 0.3px solid #c46e22;
+	border-radius: 7px;
+	cursor: pointer;
+	color: pink;
+}
+
+/*aligning select boxes*/
+.selections{
+	margin-left: 123px;
+}
+
+/*aligning and customizing form*/
+submit{
+	font-size: 20px;
+}
+
+select{
+	padding: 0.2%;
+	width: 20%;
+	font-family: "bahnschrift light", sans-serif;
+	font-size: 15px;
+}
+
+legend { 
+	font-size: 20px;
+	color: black;
+}
+
+fieldset { 
+	background-color: white;
+	border-color: #ffcccc;
+	border-width: 5px;
+	color: black;
+	margin: 0 5%;
+	padding: 2% 0;
+}
+
+
+fieldset p{
+	margin-left: 5%;
+}
+
+textarea{
+	width: 40%;
+	margin-top: 2%;
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	font-size: 15px;
+	font-family: "bahnschrift light", sans-serif;
+}
+
+label.contact{
+	display: inline-block;
+	width: 300px;
+	text-align: center;
+}
+
+input[type=text] textarea {
+	-webkit-transition: all 0.30s ease-in-out;
+	-moz-transition: all 0.30s ease-in-out;
+	outline: #ffcccc;
+	padding: 3px 0px 3px 3px;
+	margin: 5px 1px 3px 0px;
+	border: 1px solid pink;
+}
+
+/*Styling div containing all the checkboxes*/
+.checkboxes{
+	margin-left: 5%;
+	padding: 2% 0;
+}
+
+
+input[type=text]:focus, textarea:focus, input[type=email]:focus, input[type=date]:focus, input[type=time]:focus{
+	box-shadow: 0 0 0 5px #ffcccc;
+	outline: none;
+	border: none;
+	transition: 0.3s ease-out;
+}
+
+/*customizing buttons*/
+button.zoom {
+	border: groove;
+	font-family: axilia, sans-serif;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	background-color: #f4c2c2;
+	font-size: 16px;
+	text-align: center;
+	cursor: pointer;
+	vertical-align: center;
+}
+
+#submit{
+	margin-left: 40%;
+}
+
+/*Styling div containing submit and reset buttons*/
+#enq_buttons{
+	margin: 2% 0;
+}
+
+
+/*Enhancements Page*/
+
+div.enhancements{
+	display: inline-block;
+	border: 5px groove #ffcccc;
+	margin: 10px 5%;
+	padding: 20px;
+	text-align: justify;
+}
+
+ol.page_imp li{
+	margin: 2% 0;
+}
+
+
+	
+/*Changes styling when media window is different sizes*/
+/*For Index page*/
+@media only screen and (max-width: 950px) {
+	#bedroom, #d_room, #l_room, #office{
+		width: 100%;
+	} 
+
+	#authors{
+		width: 70%;
+		float: none;
+		margin: auto;
+	}
+	
+	.members{
+		width: 50%;
+	} 
+	
+	
+	#a_index{
+		margin: auto;
+		width: 50%;
+	}
+	
+	/*The "Page Implementation" section is Enhancements page*/
+	ul.page_imp li{
+		margin: 5% 0;
+	}
+
+}
+
+/* For product pages */
+@media screen and (max-width: 1650px){
+	.Prod_Desc_Left{
+		text-align: center;
+		margin-left: 3.5%;
+		margin-right: 2.5%;
+		width: 90%;
+	}
+	
+	.left figure{
+		width: 35%;
+		display: block;
+		margin-left: 32.5%;
+		margin-right: 32.5%;
+	}
+	
+	table.center{
+		width: 35%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	ul.center{
+		width: 35%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	.Prod_Desc_Right{
+		text-align: center;
+		margin-left: 3.5%;
+		margin-right: 2.5%;
+		width: 90%;
+	}
+	
+	.right figure{
+		width: 35%;
+		display: block;
+		margin-left: 32.5%;
+		margin-right: 32.5%;
+	}
+}
+
+/*For product pages*/
+@media screen and (max-width: 950px){
+	.left{
+		text-align: center;
+	}
+
+	.left figure img{
+		width: 100%;
+	}
+
+	.left figure{
+		width: 70%;
+		display: inline;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+	.Prod_Desc_Left{
+		text-align: left;
+		border-bottom: 2px solid black;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding: 1.5%;
+		width: 95%;
+	}
+	
+	.Prod_List_Left{
+		width: auto;
+		padding: 1.5%;
+		text-align: center;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	.right{
+		text-align: center;
+	}
+
+	.right figure img{
+		width: 100%;
+	}
+
+	.right figure{
+		width: 70%;
+		display: inline;
+		margin-left: 15%;
+		margin-right: 15%;
+	}
+	
+	.Prod_Desc_Right{
+		text-align: left;
+		border-bottom: 2px solid black;
+		margin-left: 2%;
+		margin-right: 2%;
+		padding: 1.5%;
+		width: auto;
+	}
+	
+	.Prod_List_Right{
+		width: auto;
+		padding: 1.5%;
+		text-align: center;
+		display: inline-block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	
+	table.center{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	ul.center{
+		width: 80%;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	
+	.set_select li{
+		display: block;
+		padding: 0.5% 1.5%;
+		margin-bottom: 5%;
+	}
+}
+
+/*For about pages & navigation*/
+@media screen and (max-width: 600px){
+	.photo, .description, .contribution{
+		width: 40%;
+		margin: 15%;
+	}
+}
+@media screen and (max-width: 750px){
+	#aboutheader{
+		height: 10%;
+		background-color: white;
+	}
+
+	nav{
+		float: left;
+		margin-top: -50px;
+		width: 230px;
+	}
+
+	.hamburger{
+		display: block;
+		position: relative;
+		float: left;
+		color: black;
+		margin: 0;
+		padding-left: 30px;
+		margin-top: -20px;
+	}
+
+	.menubar{
+		display: none;
+		padding-left: 10px;
+		margin: 60px auto auto 10px;
+	}
+
+	.dropdownlist{
+		display: none;
+		text-align: left;
+		margin: -50px auto auto 220px;
+		width: 200px;
+	}
+
+	.menubar li, .dropdownlist li{
+		display: block;
+		text-align: left;
+		padding: 0;
+		margin: 0;
+	}
+
+	#toggle:checked + .menubar{
+		display: block;
+	}
+}
+
+/*For the footer section*/
+@media screen and (max-width: 1300px){
+	
+	div.footer_socials{
+		width: 58%;
+		margin-bottom: 5%;
+	}
+	
+	div.footer_credits{
+		width:58%;
+		margin-bottom: 5%;
+		border-left-style: none;
+	}
+}
+
+
+/*New CSS*/
+
+/*Slideshow Images*/
+.slides{
+	display: none;
+	-webkit-animation-name: fade;
+	-webkit-animation-duration: 1.5s;
+	animation-name: fade;
+	animation-duration: 1.5s;
+}
+
+/*First image in the slideshow*/
+#first{
+	display: block;
+}
+
+/*Previous and next arrows*/
+#previous{
+	float: left;
+	right: 96%;
+}
+
+#next{
+	float: right;
+	left: 96%;
+}
+
+
+.arrows{
+	cursor: pointer;
+	position: absolute;
+	top: 41.5%;
+	transform: scale(2);
+	padding: 1% 1% 1.5%;
+	transition: 0.2s ease-in-out;
+	user-select: none; /*prevents the arrows from being selected*/
+}
+
+/* Fading animation */
+
+@-webkit-keyframes fade {
+  from {translateX: 0.4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 0.4}
+  to {opacity: 1}
+}
+
+
+.arrows:hover{
+	background-color: rgba(255,255,255,1);
+	
+}
+
+.arrows:active{
+	background-color: rgba(255,255,255,0.4);
+}
+
+
+/*Styling the enquiry button on product pages*/
+.enq_button{
+	text-align: center;
+}
+
+/*CSS for form preview*/
+/*div containing the form preview content*/
+#preview_box{
+	display: none;
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	opacity: 0.4;
+	position: fixed;
+	padding-top: 2%;
+	top: 0;
+}
+
+/*content of the form preview*/
+#form_preview{
+	background-color: #fefefe;
+	padding: 3%;
+	margin: 4% auto;
+	border: 5px groove #f4c2c2;
+	height: 70%;
+	width: 70%;
+	overflow: auto;
+	z-index: 3;
+	position: fixed;
+	top: 5%;
+	left: 13%;
+	display: none;
+}
+	
+/*X icon that will close the form submission preview*/
+#close_box{
+	left: 84%;	
+	transform: scale(1.5);
+	padding: 0 5px;
+	transition: 0.2s ease-in;
+	position: fixed;
+	background-color: pink;
+	border: 1px solid black;
+	transition: 0.4s ease-in-out;
+}
+
+
+#close_box:hover{
+	border: 1px solid black;
+	border-radius: 3px;
+	cursor: pointer;
+	background-color: white;
+}
+
+
+#preview_header{
+	text-align: center;
+}
+
+/*Empty p elements*/
+.content{
+	border: 2px groove #f4c2c2;
+	padding: 2% 0;
+	margin: 0 3% 2% 0;	
+}
+
+/*Confirm button*/
+#confirm_submit{
+	background-color: pink;
+	text-align: center;
+	font-size: 12px;
+	font-family: axilia, sans-serif;
+	letter-spacing: 5px;
+	padding: 2%;
+	margin: 0 45%;
+	cursor: pointer;
+	transition: 0.2s ease-in-out;
+	border-radius: 3px;
+}
+
+
+#confirm_submit:hover{
+	background-color: white;
+}
+
+#confirm_submit:active{
+	background-color: pink;
+}
+
+nav ul li.active a, nav ul li.active .dropdownbutton{
+	background-color: #262626;
+	color: #ffffff;
+}
+
+.dropdownlist li.active a{
+	position: relative;
+	background-color: #d8d1cf;
+	color: black;
+}
+
+.dropdownbutton{
+	font-family: inherit;
+	color: #000000;
+	font-size: 20px;
+	background-color: #ffffff;
+	display: inline-block;
+	margin-bottom: 0px;
+	height: 60px;
+	border: none;
+	outline: none;
+}
